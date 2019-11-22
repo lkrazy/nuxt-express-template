@@ -39,5 +39,8 @@ module.exports = {
   serverMiddleware: [
     // API middleware
     '~/server/index.js'
+  ],
+  plugins: [
+    '@plugins/ant-design-vue'
   ]
 }

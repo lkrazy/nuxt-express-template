@@ -1,6 +1,5 @@
 <template>
   <section class="container">
-    <app-menu></app-menu>
     <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo"/>
     <h1 class="title">
       USERS
@@ -20,11 +19,9 @@
 
 <script>
   import axios from '~/plugins/axios'
-  import AppMenu from '~/components/AppMenu'
 
   export default {
     components: {
-      AppMenu
     },
     async asyncData() {
       let {data} = await axios.get('/api/users')

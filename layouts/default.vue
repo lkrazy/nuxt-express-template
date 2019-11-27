@@ -1,18 +1,30 @@
 <template>
-  <div>
-    <nuxt/>
-    <my-footer/>
-  </div>
+  <a-layout id="components-layout-demo-top" class="layout">
+    <app-menu/>
+    <a-layout-content style="padding: 0 50px">
+      <a-breadcrumb style="margin: 16px 0">
+        <a-breadcrumb-item>Home</a-breadcrumb-item>
+        <a-breadcrumb-item>List</a-breadcrumb-item>
+        <a-breadcrumb-item>App</a-breadcrumb-item>
+      </a-breadcrumb>
+      <nuxt/>
+    </a-layout-content>
+    <a-layout-footer style="text-align: center">
+      <my-footer/>
+    </a-layout-footer>
+  </a-layout>
 </template>
 
 <script>
-import MyFooter from '~/components/Footer.vue'
+  import AppMenu from '~/components/AppMenu'
+  import MyFooter from '~/components/Footer.vue'
 
-export default {
-  components: {
-    MyFooter
+  export default {
+    components: {
+      MyFooter,
+      AppMenu
+    }
   }
-}
 </script>
 
 <style>
@@ -20,7 +32,6 @@ export default {
 {
   margin: 0;
   width: 100%;
-  padding: 100px 0;
   text-align: center;
 }
 

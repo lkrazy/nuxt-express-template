@@ -26,16 +26,16 @@ class Config {
     this.PORT = 8080
     this.ACTUAL_PORT = 80
     this.HTTPS = false
-    this.DOMAIN = 'easyseller.tools'
+    this.DOMAIN = 'localhost'
     this.WORKING_DIR = defaultWorkingDir
     this.DATABASE = {
-      database: 'logistics_management',
+      database: 'keep_sport',
       dialect: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'easysell_admin',
-      user: 'easysell_admin',
-      password: 'EasySeller@dmin',
+      username: 'root',
+      user: 'root',
+      password: '',
       seederStorage: 'sequelize',
       seederStorageTableName: 'sequelize_seed_meta'
     }

@@ -1,3 +1,4 @@
+import model from '../models'
 const { Router } = require('express')
 
 const router = Router()

@@ -13,3 +13,4 @@ dist
 # Backpack build
 build
 .idea/
+/yarn-error.log

@@ -1,18 +1,14 @@
-<template>
-  <a-layout id="components-layout-demo-top" class="layout">
-    <app-menu/>
-    <a-layout-content style="padding: 0 50px">
-      <a-breadcrumb style="margin: 16px 0">
-        <a-breadcrumb-item>Home</a-breadcrumb-item>
-        <a-breadcrumb-item>List</a-breadcrumb-item>
-        <a-breadcrumb-item>App</a-breadcrumb-item>
-      </a-breadcrumb>
-      <nuxt/>
-    </a-layout-content>
-    <a-layout-footer style="text-align: center">
-      <my-footer/>
-    </a-layout-footer>
-  </a-layout>
+<template lang="pug">
+  a-layout#components-layout-demo-top.layout
+    app-menu
+    a-layout-content(style="padding: 0 50px")
+      a-breadcrumb(style="margin: 16px 0")
+        a-breadcrumb-item Home
+        a-breadcrumb-item List
+        a-breadcrumb-item App
+      nuxt
+    a-layout-footer(style="text-align: center")
+      my-footer
 </template>
 
 <script>
@@ -27,37 +23,38 @@
   }
 </script>
 
-<style>
-.container
-{
-  margin: 0;
-  width: 100%;
-  text-align: center;
-}
+<style lang="stylus">
+  .container
+    margin: 0;
+    width: 100%;
+    text-align: center;
 
-.button, .button:visited
-{
-  display: inline-block;
-  color: black;
-  letter-spacing: 1px;
-  background-color: #fff;
-  border: 2px solid #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px 45px;
-}
 
-.button:hover, .button:focus
-{
-  color: #fff;
-  background-color: #000;
-}
+  .button, .button:visited
+    display: inline-block;
+    color: black;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border: 2px solid #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 45px;
 
-.title
-{
-  color: #000;
-  font-weight: 300;
-  font-size: 2.5em;
-  margin: 0;
-}
+  .button:hover, .button:focus
+    color: #fff;
+    background-color: #000;
+
+  .title
+    color: #000;
+    font-weight: 300;
+    font-size: 2.5em;
+    margin: 0;
+
+  #components-layout-demo-top
+    min-height: 100vh
+    .logo
+      width: 120px;
+      height: 31px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 16px 24px 16px 0;
 </style>
